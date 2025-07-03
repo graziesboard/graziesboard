@@ -18,14 +18,17 @@
         .social-icon:hover {
             transform: scale(1.1);
         }
+        /* Optional: Add a subtle shadow to the image for depth */
+        .image-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
     </style>
 </head>
 <body class="flex flex-col min-h-screen">
 
-    <!-- Header Section with Navigation -->
     <header class="bg-white shadow-sm py-4">
         <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-            <img src="Grazies_logo.jpeg" alt="Grazies Logo" class="h-20 md:h-24 rounded-lg mb-4 md:mb-0">
+            <img src="Grazies_logo.jpeg" alt="Grazies Logo" class="h-24 md:h-28 rounded-full mb-4 md:mb-0">
             <nav>
                 <ul class="flex space-x-4 md:space-x-8">
                     <li><a href="index.html" class="text-gray-700 hover:text-yellow-600 font-semibold text-lg">Home</a></li>
@@ -37,7 +40,6 @@
         </div>
     </header>
 
-    <!-- Main Content Section -->
     <main class="flex-grow container mx-auto px-4 py-8 md:py-16 flex flex-col items-center justify-center text-center">
         <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-4">GRAZIES</h1>
         <p class="text-xl md:text-2xl text-gray-600 mb-8">GRAZE. MINGLE. SAVOR.</p>
@@ -46,30 +48,28 @@
             Welcome to Grazies, where culinary artistry meets delightful indulgence. We craft exquisite charcuterie boards and grazing tables perfect for any occasion. From intimate gatherings to grand celebrations, let us elevate your event with a feast for the eyes and the palate.
         </p>
 
-        <!-- Call to Action -->
         <div class="mb-12">
             <a href="order.html" class="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out">
                 Order Your Board Today!
             </a>
         </div>
 
-        <!-- Social Media Section -->
+        <section class="w-full max-w-5xl my-16 md:my-24">
+            <img src="images/grazies-board.jpeg" alt="Exquisite Grazing Board from Grazies" class="w-full h-auto rounded-lg image-shadow">
+        </section>
+
         <section id="socials" class="w-full max-w-md">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Connect With Us!</h2>
             <div class="flex justify-center space-x-8">
-                <!-- Instagram -->
                 <a href="https://www.instagram.com/grazies_board?igsh=bDBiaHpwYTJhdmJm&utm_source=qr" target="_blank" rel="noopener noreferrer" class="text-pink-600 social-icon">
                     <i class="fab fa-instagram fa-4x"></i>
                 </a>
-                <!-- Facebook -->
                 <a href="https://www.facebook.com/profile.php?id=61577944138113" target="_blank" rel="noopener noreferrer" class="text-blue-700 social-icon">
                     <i class="fab fa-facebook fa-4x"></i>
                 </a>
-                <!-- TikTok (if applicable) -->
                 <a href="https://www.tiktok.com/@grazies.board?_t=ZM-8xhzWf84dqH&_r=1" target="_blank" rel="noopener noreferrer" class="text-gray-800 social-icon">
                     <i class="fab fa-tiktok fa-4x"></i>
                 </a>
-                <!-- Email (optional, as a social contact) -->
                 <a href="mailto:grazies.board@gmail.com" class="text-red-600 social-icon">
                     <i class="fas fa-envelope fa-4x"></i>
                 </a>
@@ -80,7 +80,6 @@
         </section>
     </main>
 
-    <!-- Footer Section -->
     <footer class="bg-gray-800 text-white py-6 mt-auto">
         <div class="container mx-auto px-4 text-center">
             <p>&copy; 2025 Grazies. All rights reserved.</p>
